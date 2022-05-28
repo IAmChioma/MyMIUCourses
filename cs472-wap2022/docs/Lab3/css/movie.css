@@ -66,13 +66,25 @@ body{
 
     
 }
-section{
+/* section{
     display: flex;
     flex-direction: row!important;
     
-}
+} */
 
-article{
+/* article{
+    width: 50%;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+} */
+.section-divider{
+    display: flex;
+    flex-direction: row!important;
+    padding-top: 10px;
+    
+}
+.movie-divider{
     /* margin: 1em; */
     /* border: 1px solid gray;
     border-radius: 2%; */
@@ -126,15 +138,5 @@ section{
     right: 0;
     opacity: 0.5;
 }
-/* .user-comment{
-    position: absolute;
-    top: 40%;
-    margin: 2% 2% 9% 0%;
-}
-.user-comment2{
-    position: absolute;
-    top: 40%;
-    margin: 2% 2% 9% 0%;
-    right: 53%;
-} */
+
 
