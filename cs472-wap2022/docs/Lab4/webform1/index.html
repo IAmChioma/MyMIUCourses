@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web Form 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+    </header>
+    <main class="container">
+
+       
+            <form action="#" method="get">
+            <div class="row">
+               
+                <div class="col-md-12 mt-2">
+                    <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email" required>
+                    <span class="text-muted">We'll never share your email with anyone else</span>
+                </div>
+                </div>
+                <div class="col-md-12 mt-2">
+                    <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" required placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Password  should be at least 10 characters in length and contain at least one number and one uppercase and lowercase letter">
+                </div>
+                </div>
+                <div class="col-md-12 mt-2">
+                    <div class="form-group">
+                    <label for="url">URL</label>
+                    <input type="text" name="url" id="url" class="form-control" placeholder="Enter URL" required pattern="https?://.*" title="URL must begin with either the string http:// or https://">
+                     </div>
+                </div>
+                <div class="col-md-12 mt-2">
+                    <div class="form-group">
+                    <label for="check"><input type="checkbox" name="check" id="check" class="form control">Check me out</label>
+                </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-primary mt-2">
+                </div>
+                </div>
+            </div>
+        
+    </form>
+    </main>
+<footer>
+
+</footer>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
