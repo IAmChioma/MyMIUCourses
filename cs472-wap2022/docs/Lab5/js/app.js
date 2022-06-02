@@ -9,7 +9,7 @@ function max(x,y){
     }
 }
 
-console.log(max(-2,5));
+console.log(`The max is: ${max(-2,5)}`);
 
 //2.
 function maxOfThree(x,y,z){
@@ -23,7 +23,7 @@ function maxOfThree(x,y,z){
     }
 
 }
-console.log(maxOfThree(55,93,89));
+console.log(`The max of the three is: ${maxOfThree(55,93,89)}`);
 
 
 function maxOfThree2(x,y,z){
@@ -87,12 +87,25 @@ function reverseString(ch){
 console.log(reverseString('jag tester'));
 
 //6.
-//A spread parameter must always be the last argument, else it will try an arror
+//A rest parameter must always be the last argument, else it will throw an arror
 function findLongestWord(...words){
     let longestWordLength = -Infinity;
     for(let index=0; index <words.length;index++){
         if(words[index].length > longestWordLength){
             longestWordLength= words[index].length;
+        }
+    }
+    return longestWordLength;
+}
+console.log(findLongestWord('army', 'soldier', 'quarter', 'colonel'));
+
+
+//Using arguments
+function findLongestWord(){
+    let longestWordLength = -Infinity;
+    for(let index=0; index <arguments.length;index++){
+        if(arguments[index].length > longestWordLength){
+            longestWordLength= arguments[index].length;
         }
     }
     return longestWordLength;
@@ -178,5 +191,5 @@ function printFibo(n,a,b){
     }
     return result.toString();
 }
-console.log(printFibo(6,0,1));
+console.log(`The fibonacci seqeunce is ${printFibo(6,0,1)}`);
 
