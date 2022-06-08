@@ -86,6 +86,31 @@ function reverseString(ch){
 }
 console.log(reverseString('jag tester'));
 
+function reverseInPlace(ch){
+    let a =[...ch];
+    let i=0,j=ch.length-1;
+    console.log(ch[i])
+    while(i<j){
+        let temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+        i++;j--;
+    }
+    return a.join('');
+}
+console.log(reverseInPlace('jag tester'));
+// function reverseInPlace(ch){
+//     // let a =[...ch];
+//     for(let i=0,j=ch.length-1; i<j;i++,j--){
+//         console.log(ch);
+//         let temp = ch[i];
+//         ch[i] = ch[j];
+//         ch[j] = temp;
+//         console.log(ch);
+//     }
+//     return ch;
+// }
+// console.log(reverseInPlace('jag tester'));
 //6.
 //A rest parameter must always be the last argument, else it will throw an arror
 function findLongestWord(...words){
@@ -127,7 +152,7 @@ console.log(filterLongWords(['army', 'soldier', 'quarter', 'colonel'], 6));
 //8.
 
 function computeSumOfSquares(arr){
-    let result = arr.map((x)=>x*x);
+    let result = arr.map((x)=>x*x).reduce((acc,n)=>acc+n);
     return result;
 }
 console.log(computeSumOfSquares([1,2,3,4,5]));
