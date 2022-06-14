@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <div class="container">
+            <h1>Simple Calculator</h1>
+            <form action="/calculate" method="post">
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="first">First</label>
+                            <input type="text" class="form-control" name="first" id="first" required>                        
+
+                    </div>
+                    </div>
+                    <div class="col-md-2">
+                    <div class="form-group">
+                        <label for="operator">operator</label>
+                          <select name="operator" id="operator" required class="form-select">
+                            <option value="">Select..</option>
+                            <option value="Add">Add</option>
+                            <option value="Substract">Substract</option>
+                            <option value="Multiply">Multiply</option>
+                            <option value="Divide">Divide</option>
+                          </select>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="operator">operator</label>
+                          <select name="operator" id="operator" required class="form-select">
+                            <option value="">Select..</option>
+                            <option value="+">Add</option>
+                            <option value="-">Substract</option>
+                            <option value="*">Multiply</option>
+                            <option value="/">Divide</option>
+                          </select>
+                    </div> -->
+                    </div>
+                    <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="second">Second</label>
+                            <input type="text" class="form-control" name="second" id="second" required>                        
+
+                    </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
